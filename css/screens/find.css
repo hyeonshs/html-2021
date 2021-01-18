@@ -1,0 +1,129 @@
+.lol {
+  position: relative;
+}
+.cog-dot {
+  left: 20px;
+  bottom: 15px;
+}
+.recommend-friend {
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+  padding: 25px 0px;
+  margin: 25px 0px;
+}
+.recommand-title {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.recommend-friend span {
+  margin: 100px 0px;
+  display: block;
+  text-align: center;
+  color: var(--subcolor);
+  font-size: 18px;
+}
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+.chat-header span {
+  opacity: 0.6;
+}
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post-title {
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+.post-hashtag {
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+.post-member {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+}
+.post-member img {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.post-count {
+  opacity: 0.5;
+  font-size: 14px;
+}
+.post-member .divider {
+  width: 2px;
+  height: 15px;
+  background-color: var(--subcolor);
+  margin: 0px 5px;
+}
+.member-status {
+  color: #ffb0e0;
+}
+.post-photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+.post-photo {
+  position: relative;
+}
+.post-heart {
+  background-color: var(--subcolor);
+  color: white;
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+}
+.post-heart span {
+  margin-left: 3px;
+}
+.redcircle {
+  display: flex;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1.5px solid red;
+  color: red;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  margin-left: 3px;
+}
+
+.zindex {
+  z-index: 1;
+}
+
+@keyframes heartbeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.post-heart:hover i {
+  will-change: transform;
+  animation: heartbeat 1s linear infinite;
+}

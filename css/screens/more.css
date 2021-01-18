@@ -1,0 +1,34 @@
+.more_screen .icon-row {
+  margin-top: 35px;
+}
+.more-sug {
+  margin-top: 50px;
+  border-top: var(--main-border);
+  padding-top: 40px;
+}
+.sug-title {
+  margin-bottom: 30px;
+}
+.more-sug-icons {
+  display: flex;
+}
+.more-sug-icon {
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.more-sug-icon-img {
+  width: 60px;
+  height: 60px;
+  background-color: var(--yellow);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.more-sug-icon-img i {
+  font-size: 32px;
+  color: white;
+}
